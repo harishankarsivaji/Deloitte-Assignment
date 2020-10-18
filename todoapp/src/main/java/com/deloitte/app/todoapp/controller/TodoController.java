@@ -34,6 +34,7 @@ public class TodoController {
     public List<TodoList> update(@PathVariable (value = "id") int id) {
         TodoList todo = todoRepo.findById(id).get();
         todo.setStatus(!todo.isStatus());
+        todo.setLastUpdateTime(todo.getLastUpdateTime());
         todoRepo.save(todo);
         return todoRepo.findAll();
     }
