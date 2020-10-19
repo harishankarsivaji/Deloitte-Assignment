@@ -1,15 +1,17 @@
 import React from "react";
 import "./App.css";
 import { Container } from "semantic-ui-react";
-import ToDoList from "./To-Do-List";
+import Routes from "./components/Routes";
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Container>
-        <ToDoList />
+        <Routes />
       </Container>
-    </div>
+    </BrowserRouter>
   );
 }
 
