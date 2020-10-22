@@ -16,7 +16,7 @@ Spring Boot + JPA + H2 + React
  
  Server
  1. `mvn package`
- 2. the fat `WAR file` is inside the target folder to deploy in the `Tomcat server`
+ 2. The `WAR file` is inside the target folder to deploy in the `Tomcat server`
   
  Client 
  1. `npm install` to install all dependencies for the front end.
